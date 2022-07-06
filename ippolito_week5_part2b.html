@@ -14629,7 +14629,7 @@ For more adventurous students, you are welcome (encouraged!) to come up a differ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load libraries</span>
@@ -14678,7 +14678,7 @@ For more adventurous students, you are welcome (encouraged!) to come up a differ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fetch data from github; source: https://github.com/t-davidson/hate-speech-and-offensive-language</span>
@@ -14779,7 +14779,7 @@ For more adventurous students, you are welcome (encouraged!) to come up a differ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># EDA</span>
@@ -14916,7 +14916,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create document array, which will be a list of tuples (text, label)</span>
@@ -14927,7 +14927,7 @@ jp-needs-light-background
     <span class="n">documents</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
 <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">documents</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;First few documents:&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">documents</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
+<span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">documents</span><span class="p">[:</span><span class="mi">5</span><span class="p">]))</span>
 </pre></div>
 
      </div>
@@ -14950,9 +14950,71 @@ jp-needs-light-background
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>First few documents:
-[([&#39;RT&#39;, &#39;@driswitdacake:&#39;, &#39;bitches&#39;, &#39;fwu&#39;, &#39;when&#39;, &#39;they&#39;, &#39;wanna&#39;, &#39;..&#39;, &#39;ha&#39;, &#39;na&#39;, &#39;bitch&#39;, &#39;not&#39;, &#39;over&#39;, &#39;here&#39;], &#39;offensive_language&#39;), ([&#39;@Rosaalbae&#39;, &#39;@iH8TvvitterHoes&#39;, &#39;faggot&#39;, &#39;but&#39;, &#39;you&#39;, &#39;sent&#39;, &#39;me&#39;, &#39;hella&#39;, &#39;nudes.&#39;, &#39;Hmmmm&#39;], &#39;offensive_language&#39;), ([&#39;All&#39;, &#39;my&#39;, &#39;old&#39;, &#39;hoes&#39;, &#39;gone&#39;, &#39;love&#39;, &#39;my&#39;, &#39;video&#39;], &#39;offensive_language&#39;), ([&#39;Halloween&#39;, &#39;is&#39;, &#39;a&#39;, &#39;hoe&#39;, &#39;holiday&#39;], &#39;offensive_language&#39;), ([&#39;RT&#39;, &#39;@HitTehBlunt:&#39;, &#39;*hits&#39;, &#39;blunt*&#39;, &#39;&#34;bruh&#39;, &#39;if&#39;, &#39;she&#39;, &#39;tells&#39;, &#39;me&#39;, &#39;to&#39;, &#39;go&#39;, &#39;text&#39;, &#39;my&#39;, &#39;other&#39;, &#39;hoes,&#39;, &#39;but&#39;, &#34;she&#39;s&#34;, &#39;one&#39;, &#39;of&#39;, &#39;my&#39;, &#39;hoes,&#39;, &#39;do&#39;, &#39;I&#39;, &#39;keep&#39;, &#39;texting&#39;, &#39;her&#39;, &#39;?&#34;&#39;, &#39;http://t.&amp;#8230;&#39;], &#39;offensive_language&#39;)]
 </pre>
 </div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[.@AussieGrit, loves, Austin:, http://t.co/HTt...</td>
+      <td>neither</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>[I'm, about, to, push, this, niggah, off, my, ...</td>
+      <td>offensive_language</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>[@_BeverlyNoHills, you, so, fucking, nasty., Y...</td>
+      <td>offensive_language</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>[That's, Ya, BM, tho, RT, @Tyga:, That, ain't,...</td>
+      <td>offensive_language</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>[Bad, bitches, and, good, weed]</td>
+      <td>offensive_language</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
 </div>
 
 </div>
@@ -14964,7 +15026,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tokenize; we&#39;ll use a naive approach and use a simple tokenizer.</span>
